@@ -87,22 +87,19 @@
 
 
 
-<meta name="description" content="pip是python社区提供的包管理器，使用它可以方便地安装、卸载和更新python的第三方包。
-使用脚本安装和升级pip要安装或升级pip，需要下载get-pip.py。然后运行以下命令（需要管理员权限）python get-pip.py如果setuptools(或distribute)未安装, get-pip.py会自动为你安装setuptools
-如果需要升级setuptools(或dist">
+<meta name="description" content="1.简单粗暴，使用可执行文件直接安装在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文配置完成后，下载这些模块的exe可执行文件目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址numpy-1.10.1-win32-superpack-python2.7.exe下载成功后，双击即可安装到对应python路径
+2. p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安装和使用pip管理Python第三方模块">
-<meta property="og:url" content="http://yoursite.com/2017/02/15/安装和使用pip管理Python第三方模块/index.html">
+<meta property="og:title" content="Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置">
+<meta property="og:url" content="http://yoursite.com/2017/03/03/Python2.7环境下安装numpy模块/index.html">
 <meta property="og:site_name" content="ECNU GIS">
-<meta property="og:description" content="pip是python社区提供的包管理器，使用它可以方便地安装、卸载和更新python的第三方包。
-使用脚本安装和升级pip要安装或升级pip，需要下载get-pip.py。然后运行以下命令（需要管理员权限）python get-pip.py如果setuptools(或distribute)未安装, get-pip.py会自动为你安装setuptools
-如果需要升级setuptools(或dist">
-<meta property="og:updated_time" content="2017-02-15T13:18:50.159Z">
+<meta property="og:description" content="1.简单粗暴，使用可执行文件直接安装在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文配置完成后，下载这些模块的exe可执行文件目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址numpy-1.10.1-win32-superpack-python2.7.exe下载成功后，双击即可安装到对应python路径
+2. p">
+<meta property="og:updated_time" content="2017-03-05T06:02:57.491Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安装和使用pip管理Python第三方模块">
-<meta name="twitter:description" content="pip是python社区提供的包管理器，使用它可以方便地安装、卸载和更新python的第三方包。
-使用脚本安装和升级pip要安装或升级pip，需要下载get-pip.py。然后运行以下命令（需要管理员权限）python get-pip.py如果setuptools(或distribute)未安装, get-pip.py会自动为你安装setuptools
-如果需要升级setuptools(或dist">
+<meta name="twitter:title" content="Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置">
+<meta name="twitter:description" content="1.简单粗暴，使用可执行文件直接安装在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文配置完成后，下载这些模块的exe可执行文件目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址numpy-1.10.1-win32-superpack-python2.7.exe下载成功后，双击即可安装到对应python路径
+2. p">
 
 
 
@@ -130,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/15/安装和使用pip管理Python第三方模块/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/03/Python2.7环境下安装numpy模块/"/>
 
 
 
 
 
-  <title> 安装和使用pip管理Python第三方模块 | ECNU GIS </title>
+  <title> Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置 | ECNU GIS </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -253,7 +250,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/15/安装和使用pip管理Python第三方模块/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/03/Python2.7环境下安装numpy模块/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="ECNU GIS">
@@ -277,7 +274,7 @@
             
             
               
-                安装和使用pip管理Python第三方模块
+                Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置
               
             
           </h1>
@@ -292,8 +289,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-15T16:53:03+08:00">
-                2017-02-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-03T13:23:41+08:00">
+                2017-03-03
               </time>
             
 
@@ -328,27 +325,9 @@
       
 
       
-        <p>pip是python社区提供的包管理器，使用它可以方便地安装、卸载和更新python的第三方包。</p>
-<h1 id="使用脚本安装和升级pip"><a href="#使用脚本安装和升级pip" class="headerlink" title="使用脚本安装和升级pip"></a>使用脚本安装和升级pip</h1><p>要安装或升级pip，需要下载<a href="https://bootstrap.pypa.io/get-pip.py" target="_blank" rel="external">get-pip.py</a>。<br>然后运行以下命令（需要管理员权限）<br><code>python get-pip.py</code><br>如果<a href="https://pypi.python.org/pypi/setuptools" target="_blank" rel="external"><code>setuptools</code></a>(或<a href="https://pypi.python.org/pypi/distribute" target="_blank" rel="external"><code>distribute</code></a>)未安装, get-pip.py会自动为你安装<code>setuptools</code></p>
-<p>如果需要升级setuptools(或distribute), 运行<code>pip install -U setuptools</code></p>
-<h1 id="安装包（package）"><a href="#安装包（package）" class="headerlink" title="安装包（package）"></a>安装包（package）</h1><p>pip支持从 PyPI、版本控制系统、本地项目, 甚至直接通过distribution文件安装package.<br>最常见的是使用<code>Requirement Specifiers</code>从 PyPI 安装。<br>    pip install SomePackage            # 最新版本<br>    pip install SomePackage==1.0.4     # 指定版本<br>    pip install ‘SomePackage&gt;=1.0.4’     # 最低版本<br>可以使用Requirements文件列出需要安装的packages，并通过<code>pip install</code>来安装：<br>    pip install -r requirements.txt<br>这个文件的格式详情可以参考：<a href="http://pip-cn.readthedocs.io/en/latest/reference/pip_install.html#requirements-file-format" target="_blank" rel="external">Requirements File Format</a><br>还可以通过Wheels文件安装，即：<br>    pip install SomePackage-1.0-py2.py3-none-any.whl<br>Wheel文件可以在PyPI网页上下载</p>
-<h1 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h1><pre><code>pip uninstall SomePackage
-</code></pre><h1 id="更新包"><a href="#更新包" class="headerlink" title="更新包"></a>更新包</h1><pre><code>pip install --upgrade SomePackage
-</code></pre><h1 id="查看和列举包"><a href="#查看和列举包" class="headerlink" title="查看和列举包"></a>查看和列举包</h1><pre><code>pip list
-</code></pre><h1 id="查找包"><a href="#查找包" class="headerlink" title="查找包"></a>查找包</h1><pre><code>pip search &quot;query statement&quot;
-</code></pre><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>如果你网页链接速度很慢，可在以下地址下载可能使用到的python第三方模块：</p>
-<ul>
-<li><a href="http://pan.baidu.com/s/1hrYAjXi" target="_blank" rel="external">setuptools</a></li>
-<li><a href="http://pan.baidu.com/s/1geAVCNx" target="_blank" rel="external">pip</a></li>
-<li><a href="http://pan.baidu.com/s/1nuBzulV" target="_blank" rel="external">xlrd</a></li>
-<li><a href="http://pan.baidu.com/s/1mi8tMpM" target="_blank" rel="external">xlwt</a></li>
-<li><a href="http://pan.baidu.com/s/1pLCX0Xt" target="_blank" rel="external">numpy</a></li>
-<li><a href="http://pan.baidu.com/s/1gf3Ks0r" target="_blank" rel="external">matplotlib</a></li>
-<li><a href="http://pan.baidu.com/s/1o7OU5DK" target="_blank" rel="external">requests</a></li>
-<li><a href="http://pan.baidu.com/s/1bplB67X" target="_blank" rel="external">urllib3</a></li>
-<li><a href="http://pan.baidu.com/s/1pLqCJgv" target="_blank" rel="external">pandas</a></li>
-<li><a href="http://pan.baidu.com/s/1bo6ZZI3" target="_blank" rel="external">gdal</a></li>
-</ul>
+        <h2 id="1-简单粗暴，使用可执行文件直接安装"><a href="#1-简单粗暴，使用可执行文件直接安装" class="headerlink" title="1.简单粗暴，使用可执行文件直接安装"></a>1.简单粗暴，使用可执行文件直接安装</h2><p>在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文<br>配置完成后，下载这些模块的exe可执行文件<br>目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址<a href="https://svwh.dl.sourceforge.net/project/numpy/NumPy/1.10.1/numpy-1.10.1-win32-superpack-python2.7.exe" target="_blank" rel="external">numpy-1.10.1-win32-superpack-python2.7.exe</a><br>下载成功后，双击即可安装到对应python路径</p>
+<h2 id="2-pip安装"><a href="#2-pip安装" class="headerlink" title="2. pip安装"></a>2. pip安装</h2><p>可以直接运行<code>pip install numpy</code>安装。<br>也可以在python包管理网站下载<a href="https://pypi.python.org/packages/9c/35/e503033f81c4627fc6ba6f92185563e5e95988b5e4df50b83c6af5720bd5/numpy-1.12.0-cp27-none-win32.whl#md5=5ea683e61094e0f5297f527d75d35f8d" target="_blank" rel="external">numpy的whl文件包</a>，使用<code>pip install numpy-1.12.0-cp27-none-win32.whl</code>运行安装</p>
+<p>注意，安装可能出现<code>No module name six</code>的错误，可以参照<code>pip</code>管理包的方法安装<code>six</code>模块</p>
 
       
     </div>
@@ -379,15 +358,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/02/18/Python中的Numpy、SciPy、MatPlotLib安装与配置/" rel="next" title="Python中的Numpy、SciPy、MatPlotLib安装与配置">
+                <i class="fa fa-chevron-left"></i> Python中的Numpy、SciPy、MatPlotLib安装与配置
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/15/ArcGIS下的python环境变量设置/" rel="prev" title="ArcGIS下的python环境变量配置">
-                ArcGIS下的python环境变量配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -496,7 +475,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用脚本安装和升级pip"><span class="nav-number">1.</span> <span class="nav-text">使用脚本安装和升级pip</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装包（package）"><span class="nav-number">2.</span> <span class="nav-text">安装包（package）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卸载包"><span class="nav-number">3.</span> <span class="nav-text">卸载包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新包"><span class="nav-number">4.</span> <span class="nav-text">更新包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看和列举包"><span class="nav-number">5.</span> <span class="nav-text">查看和列举包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查找包"><span class="nav-number">6.</span> <span class="nav-text">查找包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">7.</span> <span class="nav-text">注意</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-简单粗暴，使用可执行文件直接安装"><span class="nav-number">1.</span> <span class="nav-text">1.简单粗暴，使用可执行文件直接安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-pip安装"><span class="nav-number">2.</span> <span class="nav-text">2. pip安装</span></a></li></ol></div>
             
 
           </div>
