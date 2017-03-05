@@ -985,7 +985,9 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+}
+.headband header {
+  background: url("http://i1.piimg.com/567571/c6009994c7776c2d.jpg");
 }
 .site-meta {
   margin: 0;
@@ -1705,7 +1707,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #71ff9c;
+  background: #65e8a1;
 }
 .links-of-blogroll {
   font-size: 13px;
