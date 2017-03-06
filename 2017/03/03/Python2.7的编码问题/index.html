@@ -110,7 +110,7 @@ ASCII每个Python新手都会遇到编码问题，那么为什么会出现编码
 <meta property="og:image" content="https://pic1.zhimg.com/cd6c79db0291464c193de1b532ae890c_b.jpg">
 <meta property="og:image" content="http://yoursite.com/"https://pic3.zhimg.com/bc6669603ab2b498c78e857aece0996e_b.jpg"">
 <meta property="og:image" content="http://yoursite.com/"https://pic3.zhimg.com/8c0c80b57fbdce51e522823f3328dd32_r.jpg"">
-<meta property="og:updated_time" content="2017-03-06T11:59:01.200Z">
+<meta property="og:updated_time" content="2017-03-06T13:48:48.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python2.7的编码问题">
 <meta name="twitter:description" content="内容转载自知乎
@@ -218,7 +218,7 @@ ASCII每个Python新手都会遇到编码问题，那么为什么会出现编码
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -228,7 +228,7 @@ ASCII每个Python新手都会遇到编码问题，那么为什么会出现编码
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -308,7 +308,7 @@ ASCII每个Python新手都会遇到编码问题，那么为什么会出现编码
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-03T13:23:41+08:00">
                 2017-03-03
@@ -387,7 +387,7 @@ print &quot;你好&quot;
 </code></pre><p>或者是：</p>
 <pre><code>#!/usr/bin/python
 # -*- coding: utf-8 -*-
-</code></pre><p>在python中和字符串相关的数据类型,分别是<b>str</b>、<b>unicode</b>两种，他们都是basestring的子类，可见str与unicode是两种不同类型的字符串对象。<br>        basestring<br>          /  \<br>         /    \<br>       str    unicode<br>对于同一个汉字“好”，用str表示时，它对应的就是utf-8编码的’\xe5\xa5\xbd’，而用unicode表示时，他对应的符号就是u’\u597d’，与u”好”是等同的。需要补充一点的是，str类型的字符其具体的编码格式是UTF-8还是GBK，还是其他格式，根据操作系统相关。比如在Windows系统中，cmd命令行中显示的：  </p>
+</code></pre><p>在python中和字符串相关的数据类型,分别是<b>str</b>、<b>unicode</b>两种，他们都是basestring的子类，可见str与unicode是两种不同类型的字符串对象。<br>    basestring<br>      /  \<br>     /    \<br>   str    unicode<br>对于同一个汉字“好”，用str表示时，它对应的就是utf-8编码的’\xe5\xa5\xbd’，而用unicode表示时，他对应的符号就是u’\u597d’，与u”好”是等同的。需要补充一点的是，str类型的字符其具体的编码格式是UTF-8还是GBK，还是其他格式，根据操作系统相关。比如在Windows系统中，cmd命令行中显示的：  </p>
 <pre><code># windows终端
 &gt;&gt;&gt; a = &apos;好&apos;
 &gt;&gt;&gt; type(a)
@@ -407,8 +407,8 @@ print &quot;你好&quot;
 &lt;type &apos;unicode&apos;&gt;
 &gt;&gt;&gt; b
 u&apos;\u597d&apos;
-</code></pre><p>不论是Python3x、Java还是其他编程语言，Unicode编码都成为语言的默认编码格式，而数据最后保存到介质中的时候，不同的介质可有用不同的方式，有些人喜欢用UTF-8，有些人喜欢用GBK，这都无所谓，只要平台统一的编码规范，具体怎么实现并不关心。<br><img src="&quot;https://pic3.zhimg.com/bc6669603ab2b498c78e857aece0996e_b.jpg&quot;" alt=""></p>
-<h2 id="str与unicode转换"><a href="#str与unicode转换" class="headerlink" title="str与unicode转换"></a>str与unicode转换</h2><p>那么在Python中str和unicode之间是如何转换的呢？这两种类型的字符串类型之间的转换就是靠这两个方法decode和encode。<br><img src="&quot;https://pic3.zhimg.com/8c0c80b57fbdce51e522823f3328dd32_r.jpg&quot;" alt=""></p>
+</code></pre><p>不论是Python3x、Java还是其他编程语言，Unicode编码都成为语言的默认编码格式，而数据最后保存到介质中的时候，不同的介质可有用不同的方式，有些人喜欢用UTF-8，有些人喜欢用GBK，这都无所谓，只要平台统一的编码规范，具体怎么实现并不关心。<br><img src="&quot;https://pic3.zhimg.com/bc6669603ab2b498c78e857aece0996e_b.jpg&quot;" alt="unicode-utf-8"></p>
+<h2 id="str与unicode转换"><a href="#str与unicode转换" class="headerlink" title="str与unicode转换"></a>str与unicode转换</h2><p>那么在Python中str和unicode之间是如何转换的呢？这两种类型的字符串类型之间的转换就是靠这两个方法decode和encode。<br><img src="&quot;https://pic3.zhimg.com/8c0c80b57fbdce51e522823f3328dd32_r.jpg&quot;" alt="str-unicode"></p>
 <pre><code>#从str类型转换到unicode
 s.decode(encoding)   =====&gt;  &lt;type &apos;str&apos;&gt; to &lt;type &apos;unicode&apos;&gt;
 #从unicode转换到str
@@ -500,8 +500,8 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/03/Python2.7环境下安装numpy模块/" rel="next" title="Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置">
-                <i class="fa fa-chevron-left"></i> Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置
+              <a href="/2017/02/18/Python中的Numpy、SciPy、MatPlotLib安装与配置/" rel="next" title="Python中的Numpy、SciPy、MatPlotLib安装与配置">
+                <i class="fa fa-chevron-left"></i> Python中的Numpy、SciPy、MatPlotLib安装与配置
               </a>
             
           </div>
@@ -509,6 +509,10 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/03/Python2.7环境下安装numpy模块/" rel="prev" title="Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置">
+                Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -580,10 +584,10 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -602,7 +606,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -670,7 +674,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

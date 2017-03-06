@@ -192,7 +192,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -235,6 +235,139 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/03/Python2.7环境下安装numpy模块/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="ECNU GIS">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="ECNU GIS">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="ECNU GIS" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/03/Python2.7环境下安装numpy模块/" itemprop="url">
+                  Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-03T13:23:41+08:00">
+                2017-03-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/03/Python2.7环境下安装numpy模块/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/03/Python2.7环境下安装numpy模块/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-简单粗暴，使用可执行文件直接安装"><a href="#1-简单粗暴，使用可执行文件直接安装" class="headerlink" title="1.简单粗暴，使用可执行文件直接安装"></a>1.简单粗暴，使用可执行文件直接安装</h2><p>在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文<br>配置完成后，下载这些模块的exe可执行文件<br>目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址<a href="https://svwh.dl.sourceforge.net/project/numpy/NumPy/1.10.1/numpy-1.10.1-win32-superpack-python2.7.exe" target="_blank" rel="external">numpy-1.10.1-win32-superpack-python2.7.exe</a><br>下载成功后，双击即可安装到对应python路径</p>
+<h2 id="2-pip安装"><a href="#2-pip安装" class="headerlink" title="2. pip安装"></a>2. pip安装</h2><p>可以直接运行<code>pip install numpy</code>安装。<br>也可以在python包管理网站下载<a href="https://pypi.python.org/packages/9c/35/e503033f81c4627fc6ba6f92185563e5e95988b5e4df50b83c6af5720bd5/numpy-1.12.0-cp27-none-win32.whl#md5=5ea683e61094e0f5297f527d75d35f8d" target="_blank" rel="external">numpy的whl文件包</a>，使用<code>pip install numpy-1.12.0-cp27-none-win32.whl</code>运行安装</p>
+<p>注意，安装可能出现<code>No module name six</code>的错误，可以参照<code>pip</code>管理包的方法安装<code>six</code>模块</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -285,7 +418,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-03T13:23:41+08:00">
                 2017-03-03
@@ -366,7 +499,7 @@ print &quot;你好&quot;
 </code></pre><p>或者是：</p>
 <pre><code>#!/usr/bin/python
 # -*- coding: utf-8 -*-
-</code></pre><p>在python中和字符串相关的数据类型,分别是<b>str</b>、<b>unicode</b>两种，他们都是basestring的子类，可见str与unicode是两种不同类型的字符串对象。<br>        basestring<br>          /  \<br>         /    \<br>       str    unicode<br>对于同一个汉字“好”，用str表示时，它对应的就是utf-8编码的’\xe5\xa5\xbd’，而用unicode表示时，他对应的符号就是u’\u597d’，与u”好”是等同的。需要补充一点的是，str类型的字符其具体的编码格式是UTF-8还是GBK，还是其他格式，根据操作系统相关。比如在Windows系统中，cmd命令行中显示的：  </p>
+</code></pre><p>在python中和字符串相关的数据类型,分别是<b>str</b>、<b>unicode</b>两种，他们都是basestring的子类，可见str与unicode是两种不同类型的字符串对象。<br>    basestring<br>      /  \<br>     /    \<br>   str    unicode<br>对于同一个汉字“好”，用str表示时，它对应的就是utf-8编码的’\xe5\xa5\xbd’，而用unicode表示时，他对应的符号就是u’\u597d’，与u”好”是等同的。需要补充一点的是，str类型的字符其具体的编码格式是UTF-8还是GBK，还是其他格式，根据操作系统相关。比如在Windows系统中，cmd命令行中显示的：  </p>
 <pre><code># windows终端
 &gt;&gt;&gt; a = &apos;好&apos;
 &gt;&gt;&gt; type(a)
@@ -386,8 +519,8 @@ print &quot;你好&quot;
 &lt;type &apos;unicode&apos;&gt;
 &gt;&gt;&gt; b
 u&apos;\u597d&apos;
-</code></pre><p>不论是Python3x、Java还是其他编程语言，Unicode编码都成为语言的默认编码格式，而数据最后保存到介质中的时候，不同的介质可有用不同的方式，有些人喜欢用UTF-8，有些人喜欢用GBK，这都无所谓，只要平台统一的编码规范，具体怎么实现并不关心。<br><img src="&quot;https://pic3.zhimg.com/bc6669603ab2b498c78e857aece0996e_b.jpg&quot;" alt=""></p>
-<h2 id="str与unicode转换"><a href="#str与unicode转换" class="headerlink" title="str与unicode转换"></a>str与unicode转换</h2><p>那么在Python中str和unicode之间是如何转换的呢？这两种类型的字符串类型之间的转换就是靠这两个方法decode和encode。<br><img src="&quot;https://pic3.zhimg.com/8c0c80b57fbdce51e522823f3328dd32_r.jpg&quot;" alt=""></p>
+</code></pre><p>不论是Python3x、Java还是其他编程语言，Unicode编码都成为语言的默认编码格式，而数据最后保存到介质中的时候，不同的介质可有用不同的方式，有些人喜欢用UTF-8，有些人喜欢用GBK，这都无所谓，只要平台统一的编码规范，具体怎么实现并不关心。<br><img src="&quot;https://pic3.zhimg.com/bc6669603ab2b498c78e857aece0996e_b.jpg&quot;" alt="unicode-utf-8"></p>
+<h2 id="str与unicode转换"><a href="#str与unicode转换" class="headerlink" title="str与unicode转换"></a>str与unicode转换</h2><p>那么在Python中str和unicode之间是如何转换的呢？这两种类型的字符串类型之间的转换就是靠这两个方法decode和encode。<br><img src="&quot;https://pic3.zhimg.com/8c0c80b57fbdce51e522823f3328dd32_r.jpg&quot;" alt="str-unicode"></p>
 <pre><code>#从str类型转换到unicode
 s.decode(encoding)   =====&gt;  &lt;type &apos;str&apos;&gt; to &lt;type &apos;unicode&apos;&gt;
 #从unicode转换到str
@@ -489,139 +622,6 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/03/Python2.7环境下安装numpy模块/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="ECNU GIS">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="ECNU GIS">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="ECNU GIS" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/03/Python2.7环境下安装numpy模块/" itemprop="url">
-                  Numpy、SciPy、MatPlotLib在Python2.7.9下的安装与配置
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-03T13:23:41+08:00">
-                2017-03-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/03/Python2.7环境下安装numpy模块/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/03/Python2.7环境下安装numpy模块/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="1-简单粗暴，使用可执行文件直接安装"><a href="#1-简单粗暴，使用可执行文件直接安装" class="headerlink" title="1.简单粗暴，使用可执行文件直接安装"></a>1.简单粗暴，使用可执行文件直接安装</h2><p>在安装前首先需要配置好环境变量，具体方法参见“ArcGIS下的python环境变量配置”一文<br>配置完成后，下载这些模块的exe可执行文件<br>目前，numpy的最新版本为1.12.0，打包的可执行文件最新版本为1.10.1，下载地址<a href="https://svwh.dl.sourceforge.net/project/numpy/NumPy/1.10.1/numpy-1.10.1-win32-superpack-python2.7.exe" target="_blank" rel="external">numpy-1.10.1-win32-superpack-python2.7.exe</a><br>下载成功后，双击即可安装到对应python路径</p>
-<h2 id="2-pip安装"><a href="#2-pip安装" class="headerlink" title="2. pip安装"></a>2. pip安装</h2><p>可以直接运行<code>pip install numpy</code>安装。<br>也可以在python包管理网站下载<a href="https://pypi.python.org/packages/9c/35/e503033f81c4627fc6ba6f92185563e5e95988b5e4df50b83c6af5720bd5/numpy-1.12.0-cp27-none-win32.whl#md5=5ea683e61094e0f5297f527d75d35f8d" target="_blank" rel="external">numpy的whl文件包</a>，使用<code>pip install numpy-1.12.0-cp27-none-win32.whl</code>运行安装</p>
-<p>注意，安装可能出现<code>No module name six</code>的错误，可以参照<code>pip</code>管理包的方法安装<code>six</code>模块</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/18/Python中的Numpy、SciPy、MatPlotLib安装与配置/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -662,7 +662,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-18T13:00:38+08:00">
                 2017-02-18
@@ -794,7 +794,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-15T21:26:22+08:00">
                 2017-02-15
@@ -935,7 +935,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-15T16:53:03+08:00">
                 2017-02-15
@@ -1081,7 +1081,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -1133,7 +1133,7 @@ u&apos;id=215903184&amp;index=0&amp;st=52&amp;sid=95000&amp;i&apos;
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
